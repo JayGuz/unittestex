@@ -19,10 +19,10 @@ public class Snake extends Pet implements PetImpl {
     private Breed breed;
     /**
      * Constructor
-     * @param animalType {@link AnimalType} that defines if it domesticated or wild cat
-     * @param skinType The {@link Skin} of the cat
-     * @param gender The {@link Gender} of the cat
-     * @param breed The type of cat {@link Breed}
+     * @param animalType {@link AnimalType} that defines if it domesticated or wild snake
+     * @param skinType The {@link Skin} of the snake
+     * @param gender The {@link Gender} of the snake
+     * @param breed The type of snake {@link Breed}
      */
     public Snake(AnimalType animalType, Skin skinType, Gender gender, Breed breed)
     {
@@ -31,11 +31,11 @@ public class Snake extends Pet implements PetImpl {
 
     /**
      * Constructor
-     * @param animalType {@link AnimalType} that defines if it domesticated or wild cat
-     * @param skinType The {@link Skin} of the cat
-     * @param gender The {@link Gender} of the cat
+     * @param animalType {@link AnimalType} that defines if it domesticated or wild snake
+     * @param skinType The {@link Skin} of the snake
+     * @param gender The {@link Gender} of the snake
      * @param breed The type of cat {@link Breed}
-     * @param cost The cost of the cat
+     * @param cost The cost of the snake
      */
     public Snake(AnimalType animalType, Skin skinType, Gender gender, Breed breed, BigDecimal cost)
     {
@@ -44,11 +44,11 @@ public class Snake extends Pet implements PetImpl {
 
     /**
      * Constructor
-     * @param animalType {@link AnimalType} that defines if it domesticated or wild cat
+     * @param animalType {@link AnimalType} that defines if it domesticated or wild snake
      * @param skinType The {@link Skin} of the snake
      * @param gender The {@link Gender} of the snake
-     * @param breed The type of cat {@link Breed}
-     * @param cost The cost of the cat
+     * @param breed The type of snake {@link Breed}
+     * @param cost The cost of the snake
      * @param petStoreId The pet store id
      */
     public Snake(AnimalType animalType, Skin skinType, Gender gender, Breed breed, BigDecimal cost, int petStoreId)

@@ -34,7 +34,7 @@ public class Bird extends Pet implements PetImpl {
      * @param animalType {@link AnimalType} that defines if it domesticated or wild cat
      * @param skinType The {@link Skin} of the bird
      * @param gender The {@link Gender} of the bird
-     * @param breed The type of cat {@link Breed}
+     * @param breed The type of bird {@link Breed}
      * @param cost The cost of the bird
      */
     public Bird(AnimalType animalType, Skin skinType, Gender gender, Breed breed, BigDecimal cost)
@@ -44,11 +44,11 @@ public class Bird extends Pet implements PetImpl {
 
     /**
      * Constructor
-     * @param animalType {@link AnimalType} that defines if it domesticated or wild cat
-     * @param skinType The {@link Skin} of the cat
-     * @param gender The {@link Gender} of the cat
-     * @param breed The type of cat {@link Breed}
-     * @param cost The cost of the cat
+     * @param animalType {@link AnimalType} that defines if it domesticated or wild bird
+     * @param skinType The {@link Skin} of the bird
+     * @param gender The {@link Gender} of the bird
+     * @param breed The type of bird {@link Breed}
+     * @param cost The cost of the bird
      * @param petStoreId The pet store id
      */
     public Bird(AnimalType animalType, Skin skinType, Gender gender, Breed breed, BigDecimal cost, int petStoreId)
@@ -61,16 +61,16 @@ public class Bird extends Pet implements PetImpl {
     }
 
     /**
-     * Is the cat allergy friendly determined by skin type
-     * @return A message that tells if the cat is hypoallergenic
+     * Is the bird allergy friendly determined by skin type
+     * @return A message that tells if the bird is hypoallergenic
      */
     public String birdHypoallergenic() {
         return super.petHypoallergenic(this.skinType).replaceAll("pet", "bird");
     }
 
     /**
-     * Depending if the cat is domestic, wild, or neither what can the say
-     * @return what cats would speak
+     * Depending if the bird is domestic, wild, or neither what can the say
+     * @return what bird would speak
      */
     public String speak() {
         String language;
